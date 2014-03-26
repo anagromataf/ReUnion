@@ -18,12 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.dataManager = [[RUDataManager alloc] initWithModel:[ReUnionModel managedObjectModel]];
+	NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                                       NSUserDomainMask, YES);
+	NSString *storePath = [[documentDirectories objectAtIndex:0] stringByAppendingPathComponent:@"ReUnion.db"];
+    NSAssert(storePath, @"Could not find the documents directoy.");
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    NSURL *storeURL = [[NSURL alloc] initFileURLWithPath:storePath];
+    self.dataManager = [[RUDataManager alloc] initWithModel:[ReUnionModel managedObjectModel]
+                                                        URL:storeURL];
+    
     return YES;
 }
 

@@ -12,7 +12,7 @@
 @interface RUDataManager : NSObject
 
 #pragma mark Life-cycle
-- (id)initWithModel:(NSManagedObjectModel *)model;
+- (id)initWithModel:(NSManagedObjectModel *)model URL:(NSURL *)storeURL;
 
 #pragma mark CoreData Stack
 @property (nonatomic, readonly) NSManagedObjectModel *managedObjectModel;

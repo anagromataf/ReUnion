@@ -12,11 +12,19 @@
 
 #pragma mark Life-cycle
 
-- (id)initWithModel:(NSManagedObjectModel *)model
+- (id)initWithModel:(NSManagedObjectModel *)model URL:(NSURL *)storeURL
 {
     self = [super init];
     if (self) {
         _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+        
+        NSError *error = nil;
+        NSPersistentStore *store = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                                             configuration:nil
+                                                                                       URL:storeURL
+                                                                                   options:nil
+                                                                                     error:&error];
+        NSAssert(store != nil, [error localizedDescription]);
     }
     return self;
 }
