@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RUDataManager.h"
+
 @interface RUAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, readonly) RUDataManager *dataManager;
 
 @end
