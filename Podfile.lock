@@ -1,1 +1,14 @@
+PODS:
+  - ReUnionModel
+
+DEPENDENCIES:
+  - ReUnionModel (from `ReUnionModel.podspec`)
+
+EXTERNAL SOURCES:
+  ReUnionModel:
+    :path: ReUnionModel.podspec
+
+SPEC CHECKSUMS:
+  ReUnionModel: 391f73798f57d4861cf178d577a155588e96e229
+
 COCOAPODS: 0.29.0

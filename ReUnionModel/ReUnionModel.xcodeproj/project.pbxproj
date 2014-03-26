@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6C6213018E3812C008D1104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C6212F18E3812C008D1104 /* Foundation.framework */; };
+		F6C6213518E3812C008D1104 /* ReUnionModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6C6213418E3812C008D1104 /* ReUnionModel.h */; };
+		F6C6213718E3812C008D1104 /* ReUnionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6213618E3812C008D1104 /* ReUnionModel.m */; };
+		F6C6213E18E3812C008D1104 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C6213D18E3812C008D1104 /* XCTest.framework */; };
+		F6C6213F18E3812C008D1104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C6212F18E3812C008D1104 /* Foundation.framework */; };
+		F6C6214118E3812C008D1104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C6214018E3812C008D1104 /* UIKit.framework */; };
+		F6C6214418E3812C008D1104 /* libReUnionModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C6212C18E3812C008D1104 /* libReUnionModel.a */; };
+		F6C6214A18E3812C008D1104 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6C6214818E3812C008D1104 /* InfoPlist.strings */; };
+		F6C6214C18E3812C008D1104 /* ReUnionModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6214B18E3812C008D1104 /* ReUnionModelTests.m */; };
+		F6C6215718E3821E008D1104 /* ReUnionModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6C6215518E3821E008D1104 /* ReUnionModel.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6C6214218E3812C008D1104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6C6212418E3812C008D1104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C6212B18E3812C008D1104;
+			remoteInfo = ReUnionModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6C6212A18E3812C008D1104 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F6C6213518E3812C008D1104 /* ReUnionModel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F6C6212C18E3812C008D1104 /* libReUnionModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReUnionModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C6212F18E3812C008D1104 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6C6213318E3812C008D1104 /* ReUnionModel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReUnionModel-Prefix.pch"; sourceTree = "<group>"; };
+		F6C6213418E3812C008D1104 /* ReUnionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReUnionModel.h; sourceTree = "<group>"; };
+		F6C6213618E3812C008D1104 /* ReUnionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReUnionModel.m; sourceTree = "<group>"; };
+		F6C6213C18E3812C008D1104 /* ReUnionModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReUnionModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C6213D18E3812C008D1104 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F6C6214018E3812C008D1104 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6C6214718E3812C008D1104 /* ReUnionModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReUnionModelTests-Info.plist"; sourceTree = "<group>"; };
+		F6C6214918E3812C008D1104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6C6214B18E3812C008D1104 /* ReUnionModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReUnionModelTests.m; sourceTree = "<group>"; };
+		F6C6215618E3821E008D1104 /* ReUnionModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReUnionModel.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6C6212918E3812C008D1104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C6213018E3812C008D1104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C6213918E3812C008D1104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C6214418E3812C008D1104 /* libReUnionModel.a in Frameworks */,
+				F6C6213E18E3812C008D1104 /* XCTest.framework in Frameworks */,
+				F6C6214118E3812C008D1104 /* UIKit.framework in Frameworks */,
+				F6C6213F18E3812C008D1104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6C6212318E3812C008D1104 = {
+			isa = PBXGroup;
+			children = (
+				F6C6213118E3812C008D1104 /* ReUnionModel */,
+				F6C6214518E3812C008D1104 /* ReUnionModelTests */,
+				F6C6212E18E3812C008D1104 /* Frameworks */,
+				F6C6212D18E3812C008D1104 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6C6212D18E3812C008D1104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6212C18E3812C008D1104 /* libReUnionModel.a */,
+				F6C6213C18E3812C008D1104 /* ReUnionModelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6C6212E18E3812C008D1104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6212F18E3812C008D1104 /* Foundation.framework */,
+				F6C6213D18E3812C008D1104 /* XCTest.framework */,
+				F6C6214018E3812C008D1104 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6C6213118E3812C008D1104 /* ReUnionModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6213418E3812C008D1104 /* ReUnionModel.h */,
+				F6C6213618E3812C008D1104 /* ReUnionModel.m */,
+				F6C6215518E3821E008D1104 /* ReUnionModel.xcdatamodeld */,
+				F6C6213218E3812C008D1104 /* Supporting Files */,
+			);
+			path = ReUnionModel;
+			sourceTree = "<group>";
+		};
+		F6C6213218E3812C008D1104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6213318E3812C008D1104 /* ReUnionModel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C6214518E3812C008D1104 /* ReUnionModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6214B18E3812C008D1104 /* ReUnionModelTests.m */,
+				F6C6214618E3812C008D1104 /* Supporting Files */,
+			);
+			path = ReUnionModelTests;
+			sourceTree = "<group>";
+		};
+		F6C6214618E3812C008D1104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6214718E3812C008D1104 /* ReUnionModelTests-Info.plist */,
+				F6C6214818E3812C008D1104 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6C6212B18E3812C008D1104 /* ReUnionModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C6214F18E3812C008D1104 /* Build configuration list for PBXNativeTarget "ReUnionModel" */;
+			buildPhases = (
+				F6C6212818E3812C008D1104 /* Sources */,
+				F6C6212918E3812C008D1104 /* Frameworks */,
+				F6C6212A18E3812C008D1104 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReUnionModel;
+			productName = ReUnionModel;
+			productReference = F6C6212C18E3812C008D1104 /* libReUnionModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F6C6213B18E3812C008D1104 /* ReUnionModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C6215218E3812C008D1104 /* Build configuration list for PBXNativeTarget "ReUnionModelTests" */;
+			buildPhases = (
+				F6C6213818E3812C008D1104 /* Sources */,
+				F6C6213918E3812C008D1104 /* Frameworks */,
+				F6C6213A18E3812C008D1104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6C6214318E3812C008D1104 /* PBXTargetDependency */,
+			);
+			name = ReUnionModelTests;
+			productName = ReUnionModelTests;
+			productReference = F6C6213C18E3812C008D1104 /* ReUnionModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6C6212418E3812C008D1104 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tobias Kräntzer";
+			};
+			buildConfigurationList = F6C6212718E3812C008D1104 /* Build configuration list for PBXProject "ReUnionModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6C6212318E3812C008D1104;
+			productRefGroup = F6C6212D18E3812C008D1104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6C6212B18E3812C008D1104 /* ReUnionModel */,
+				F6C6213B18E3812C008D1104 /* ReUnionModelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6C6213A18E3812C008D1104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C6214A18E3812C008D1104 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6C6212818E3812C008D1104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C6215718E3821E008D1104 /* ReUnionModel.xcdatamodeld in Sources */,
+				F6C6213718E3812C008D1104 /* ReUnionModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C6213818E3812C008D1104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C6214C18E3812C008D1104 /* ReUnionModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6C6214318E3812C008D1104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C6212B18E3812C008D1104 /* ReUnionModel */;
+			targetProxy = F6C6214218E3812C008D1104 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6C6214818E3812C008D1104 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C6214918E3812C008D1104 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6C6214D18E3812C008D1104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6C6214E18E3812C008D1104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6C6215018E3812C008D1104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ReUnionModel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReUnionModel/ReUnionModel-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F6C6215118E3812C008D1104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ReUnionModel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReUnionModel/ReUnionModel-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6C6215318E3812C008D1104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReUnionModel/ReUnionModel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReUnionModelTests/ReUnionModelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F6C6215418E3812C008D1104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReUnionModel/ReUnionModel-Prefix.pch";
+				INFOPLIST_FILE = "ReUnionModelTests/ReUnionModelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6C6212718E3812C008D1104 /* Build configuration list for PBXProject "ReUnionModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C6214D18E3812C008D1104 /* Debug */,
+				F6C6214E18E3812C008D1104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6C6214F18E3812C008D1104 /* Build configuration list for PBXNativeTarget "ReUnionModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C6215018E3812C008D1104 /* Debug */,
+				F6C6215118E3812C008D1104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C6215218E3812C008D1104 /* Build configuration list for PBXNativeTarget "ReUnionModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C6215318E3812C008D1104 /* Debug */,
+				F6C6215418E3812C008D1104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6C6215518E3821E008D1104 /* ReUnionModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6C6215618E3821E008D1104 /* ReUnionModel.xcdatamodel */,
+			);
+			currentVersion = F6C6215618E3821E008D1104 /* ReUnionModel.xcdatamodel */;
+			path = ReUnionModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6C6212418E3812C008D1104 /* Project object */;
+}
