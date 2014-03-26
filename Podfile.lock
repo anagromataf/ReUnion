@@ -1,14 +1,19 @@
 PODS:
+  - ResourceMapper (0.1)
   - ReUnionModel (0.0.1)
 
 DEPENDENCIES:
+  - ResourceMapper (from `../ResourceMapper/ResourceMapper.podspec`)
   - ReUnionModel (from `ReUnionModel.podspec`)
 
 EXTERNAL SOURCES:
+  ResourceMapper:
+    :path: ../ResourceMapper/ResourceMapper.podspec
   ReUnionModel:
     :path: ReUnionModel.podspec
 
 SPEC CHECKSUMS:
+  ResourceMapper: fb6f225940aa73b19173dd2aa4cc5c93a3670bea
   ReUnionModel: 7f199283363af3662b2229461d17d13bc8dbd1b0
 
 COCOAPODS: 0.29.0
