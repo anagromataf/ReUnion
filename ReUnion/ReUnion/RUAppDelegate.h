@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ResourceMapper/ResourceMapper.h>
 
 #import "RUDataManager.h"
 
@@ -15,5 +16,6 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (nonatomic, readonly) RUDataManager *dataManager;
+@property (nonatomic, readonly) RMMapper *resouceMapper;
 
 @end

@@ -12,6 +12,7 @@
 
 @interface RUAppDelegate ()
 @property (nonatomic, readwrite, strong) RUDataManager *dataManager;
+@property (nonatomic, readwrite, strong) RMMapper *resouceMapper;
 @end
 
 @implementation RUAppDelegate
@@ -26,6 +27,9 @@
     NSURL *storeURL = [[NSURL alloc] initFileURLWithPath:storePath];
     self.dataManager = [[RUDataManager alloc] initWithModel:[ReUnionModel managedObjectModel]
                                                         URL:storeURL];
+    
+    
+    self.resouceMapper = [[RMMapper alloc] initWithPersistentStoreCoordinator:self.dataManager.persistentStoreCoordinator];
     
     return YES;
 }
