@@ -10,7 +10,40 @@
 
 #import "RUSessionTransformer.h"
 
+@interface RUSessionTransformer ()
++ (NSDateFormatter *)dateFormatter;
+@end
+
 @implementation RUSessionTransformer
+
++ (NSDateFormatter *)dateFormatter
+{
+    static NSDateFormatter *formatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
+    });
+    return formatter;
+}
+
+- (id)transformedValueForAttribute:(NSAttributeDescription *)attributeDescription
+                          ofObject:(id)object
+                          userInfo:(NSDictionary *)userInfo
+{
+    if (attributeDescription.attributeType == NSDateAttributeType) {
+        NSString *dateString = [object valueForKey:attributeDescription.name];
+        if (dateString) {
+            return [[[self class] dateFormatter] dateFromString:dateString];
+        } else {
+            return nil;
+        }
+    } else {
+        return [super transformedValueForAttribute:attributeDescription
+                                          ofObject:object
+                                          userInfo:userInfo];
+    }
+}
 
 - (id)transformedValueForRelationship:(NSRelationshipDescription *)relationshipDescription
                              ofObject:(id)object
