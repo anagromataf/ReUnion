@@ -1,5 +1,5 @@
 PODS:
-  - ModelTransformer (1.0.0-alpha-2)
+  - ModelTransformer (1.0.0-alpha-4)
   - ResourceMapper (0.1)
   - ReUnionModel (0.0.1)
 
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: ReUnionModel.podspec
 
 SPEC CHECKSUMS:
-  ModelTransformer: 0fcb2898bcd4610eeb24760da37fdd257f39631a
+  ModelTransformer: f2ae1f70d85e903a91735d3aca5d616c481e1bc1
   ResourceMapper: fb6f225940aa73b19173dd2aa4cc5c93a3670bea
   ReUnionModel: 7f199283363af3662b2229461d17d13bc8dbd1b0
 
