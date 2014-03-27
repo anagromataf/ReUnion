@@ -16,8 +16,8 @@
         <relationship name="days" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" inverseName="event" inverseEntity="Day" syncable="YES"/>
         <relationship name="formats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Format" inverseName="event" inverseEntity="Format" syncable="YES"/>
         <relationship name="levels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Level" inverseName="event" inverseEntity="Level" syncable="YES"/>
-        <relationship name="locations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="event" inverseEntity="Location" syncable="YES"/>
-        <relationship name="sessions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="event" inverseEntity="Session" syncable="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="event" inverseEntity="Location" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="event" inverseEntity="Session" syncable="YES"/>
         <relationship name="skeakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="event" inverseEntity="Speaker" syncable="YES"/>
         <relationship name="tracks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Track" inverseName="event" inverseEntity="Track" syncable="YES"/>
         <userInfo>
@@ -106,7 +106,7 @@
     </entity>
     <elements>
         <element name="Day" positionX="-90" positionY="-73" width="128" height="118"/>
-        <element name="Event" positionX="-675" positionY="-261" width="128" height="178"/>
+        <element name="Event" positionX="-675" positionY="-261" width="128" height="180"/>
         <element name="Format" positionX="52" positionY="36" width="128" height="103"/>
         <element name="Level" positionX="-65" positionY="171" width="128" height="103"/>
         <element name="Link" positionX="-774" positionY="38" width="128" height="133"/>

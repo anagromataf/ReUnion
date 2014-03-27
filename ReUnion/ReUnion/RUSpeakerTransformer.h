@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Tobias Kräntzer. All rights reserved.
 //
 
-#import <ModelTransformer/ModelTransformer.h>
+#import "RUBaseTransformer.h"
 
-@interface RUSpeakerTransformer : MTObjectTransformer
+@interface RUSpeakerTransformer : RUBaseTransformer
 
 @end

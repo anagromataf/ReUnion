@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B4507EFC69714FF2AE76D8B0 /* libPods-ReUnion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4A694886874294ACF73569 /* libPods-ReUnion.a */; };
+		F6085C6A18E4505B0097F846 /* RUEventTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C6918E4505B0097F846 /* RUEventTransformer.m */; };
+		F6085C6D18E452720097F846 /* RUSessionTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C6C18E452720097F846 /* RUSessionTransformer.m */; };
+		F6085C7018E452C90097F846 /* RUBaseTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C6F18E452C90097F846 /* RUBaseTransformer.m */; };
+		F6085C7318E457330097F846 /* RUDayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C7218E457330097F846 /* RUDayTransformer.m */; };
+		F6085C7618E4574A0097F846 /* RUFormatTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C7518E4574A0097F846 /* RUFormatTransformer.m */; };
+		F6085C7918E4575A0097F846 /* RULevelTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C7818E4575A0097F846 /* RULevelTransformer.m */; };
+		F6085C7C18E4576B0097F846 /* RULinkTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C7B18E4576B0097F846 /* RULinkTransformer.m */; };
+		F6085C7F18E457830097F846 /* RULocationTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C7E18E457830097F846 /* RULocationTransformer.m */; };
+		F6085C8218E457900097F846 /* RUTrackTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6085C8118E457900097F846 /* RUTrackTransformer.m */; };
 		F62FA74A18E41E6400102069 /* RUSpeakerTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F62FA74918E41E6400102069 /* RUSpeakerTransformer.m */; };
 		F6C620F518E3800E008D1104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C620F418E3800E008D1104 /* Foundation.framework */; };
 		F6C620F718E3800E008D1104 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C620F618E3800E008D1104 /* CoreGraphics.framework */; };
@@ -38,6 +47,24 @@
 /* Begin PBXFileReference section */
 		8C4A694886874294ACF73569 /* libPods-ReUnion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReUnion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968ABE9A0E1F4D0C8B70E6CD /* Pods-ReUnion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReUnion.xcconfig"; path = "../Pods/Pods-ReUnion.xcconfig"; sourceTree = "<group>"; };
+		F6085C6818E4505B0097F846 /* RUEventTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUEventTransformer.h; sourceTree = "<group>"; };
+		F6085C6918E4505B0097F846 /* RUEventTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUEventTransformer.m; sourceTree = "<group>"; };
+		F6085C6B18E452720097F846 /* RUSessionTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSessionTransformer.h; sourceTree = "<group>"; };
+		F6085C6C18E452720097F846 /* RUSessionTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSessionTransformer.m; sourceTree = "<group>"; };
+		F6085C6E18E452C90097F846 /* RUBaseTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUBaseTransformer.h; sourceTree = "<group>"; };
+		F6085C6F18E452C90097F846 /* RUBaseTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUBaseTransformer.m; sourceTree = "<group>"; };
+		F6085C7118E457330097F846 /* RUDayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUDayTransformer.h; sourceTree = "<group>"; };
+		F6085C7218E457330097F846 /* RUDayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUDayTransformer.m; sourceTree = "<group>"; };
+		F6085C7418E4574A0097F846 /* RUFormatTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUFormatTransformer.h; sourceTree = "<group>"; };
+		F6085C7518E4574A0097F846 /* RUFormatTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUFormatTransformer.m; sourceTree = "<group>"; };
+		F6085C7718E4575A0097F846 /* RULevelTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RULevelTransformer.h; sourceTree = "<group>"; };
+		F6085C7818E4575A0097F846 /* RULevelTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RULevelTransformer.m; sourceTree = "<group>"; };
+		F6085C7A18E4576B0097F846 /* RULinkTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RULinkTransformer.h; sourceTree = "<group>"; };
+		F6085C7B18E4576B0097F846 /* RULinkTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RULinkTransformer.m; sourceTree = "<group>"; };
+		F6085C7D18E457830097F846 /* RULocationTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RULocationTransformer.h; sourceTree = "<group>"; };
+		F6085C7E18E457830097F846 /* RULocationTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RULocationTransformer.m; sourceTree = "<group>"; };
+		F6085C8018E457900097F846 /* RUTrackTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUTrackTransformer.h; sourceTree = "<group>"; };
+		F6085C8118E457900097F846 /* RUTrackTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUTrackTransformer.m; sourceTree = "<group>"; };
 		F62FA74818E41E6400102069 /* RUSpeakerTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSpeakerTransformer.h; sourceTree = "<group>"; };
 		F62FA74918E41E6400102069 /* RUSpeakerTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSpeakerTransformer.m; sourceTree = "<group>"; };
 		F6C620F118E3800E008D1104 /* ReUnion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReUnion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,8 +116,26 @@
 		F62FA74718E41DE800102069 /* Model Transformer */ = {
 			isa = PBXGroup;
 			children = (
+				F6085C6818E4505B0097F846 /* RUEventTransformer.h */,
+				F6085C6918E4505B0097F846 /* RUEventTransformer.m */,
+				F6085C6E18E452C90097F846 /* RUBaseTransformer.h */,
+				F6085C6F18E452C90097F846 /* RUBaseTransformer.m */,
 				F62FA74818E41E6400102069 /* RUSpeakerTransformer.h */,
 				F62FA74918E41E6400102069 /* RUSpeakerTransformer.m */,
+				F6085C6B18E452720097F846 /* RUSessionTransformer.h */,
+				F6085C6C18E452720097F846 /* RUSessionTransformer.m */,
+				F6085C7118E457330097F846 /* RUDayTransformer.h */,
+				F6085C7218E457330097F846 /* RUDayTransformer.m */,
+				F6085C7418E4574A0097F846 /* RUFormatTransformer.h */,
+				F6085C7518E4574A0097F846 /* RUFormatTransformer.m */,
+				F6085C7718E4575A0097F846 /* RULevelTransformer.h */,
+				F6085C7818E4575A0097F846 /* RULevelTransformer.m */,
+				F6085C7A18E4576B0097F846 /* RULinkTransformer.h */,
+				F6085C7B18E4576B0097F846 /* RULinkTransformer.m */,
+				F6085C7D18E457830097F846 /* RULocationTransformer.h */,
+				F6085C7E18E457830097F846 /* RULocationTransformer.m */,
+				F6085C8018E457900097F846 /* RUTrackTransformer.h */,
+				F6085C8118E457900097F846 /* RUTrackTransformer.m */,
 			);
 			name = "Model Transformer";
 			sourceTree = "<group>";
@@ -229,6 +274,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Tobias Kräntzer";
 				TargetAttributes = {
+					F6C620F018E3800E008D1104 = {
+						DevelopmentTeam = KC485BAJHZ;
+					};
 					F6C6210B18E3800E008D1104 = {
 						TestTargetID = F6C620F018E3800E008D1104;
 					};
@@ -311,10 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6085C7018E452C90097F846 /* RUBaseTransformer.m in Sources */,
+				F6085C7F18E457830097F846 /* RULocationTransformer.m in Sources */,
 				F6C6210118E3800E008D1104 /* main.m in Sources */,
+				F6085C7C18E4576B0097F846 /* RULinkTransformer.m in Sources */,
+				F6085C6D18E452720097F846 /* RUSessionTransformer.m in Sources */,
+				F6085C8218E457900097F846 /* RUTrackTransformer.m in Sources */,
+				F6085C7918E4575A0097F846 /* RULevelTransformer.m in Sources */,
 				F6C6215A18E386B4008D1104 /* RUDataManager.m in Sources */,
+				F6085C6A18E4505B0097F846 /* RUEventTransformer.m in Sources */,
+				F6085C7318E457330097F846 /* RUDayTransformer.m in Sources */,
 				F62FA74A18E41E6400102069 /* RUSpeakerTransformer.m in Sources */,
 				F6C6210518E3800E008D1104 /* RUAppDelegate.m in Sources */,
+				F6085C7618E4574A0097F846 /* RUFormatTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +447,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8109C719-A5D8-4AD9-8556-1E3DA37BE0B0";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -421,6 +479,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "8109C719-A5D8-4AD9-8556-1E3DA37BE0B0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -432,6 +491,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReUnion/ReUnion-Prefix.pch";
 				INFOPLIST_FILE = "ReUnion/ReUnion-Info.plist";
@@ -446,6 +507,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReUnion/ReUnion-Prefix.pch";
 				INFOPLIST_FILE = "ReUnion/ReUnion-Info.plist";
