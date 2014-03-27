@@ -38,6 +38,13 @@
         } else {
             return nil;
         }
+    } else if ([attributeDescription.name isEqualToString:@"url"]) {
+        NSString *urlString = [object valueForKey:@"url"];
+        if ([urlString isKindOfClass:[NSString class]] && urlString) {
+            return [NSURL URLWithString:urlString];
+        } else {
+            return nil;
+        }
     } else {
         return [super transformedValueForAttribute:attributeDescription
                                           ofObject:object
