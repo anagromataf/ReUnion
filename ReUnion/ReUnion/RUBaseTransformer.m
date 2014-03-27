@@ -16,10 +16,14 @@
 {
     if ([relationshipDescription.name isEqual:@"event"]) {
         NSString *eventId = [object valueForKey:@"event"];
-        NSDictionary *event = @{@"id":eventId};
-        return [[MTObjectTransformer alloc] initWithObject:event
-                                                    entity:relationshipDescription.destinationEntity
-                                                  userInfo:userInfo];
+        if (eventId) {
+            NSDictionary *event = @{@"id":eventId};
+            return [[MTObjectTransformer alloc] initWithObject:event
+                                                        entity:relationshipDescription.destinationEntity
+                                                      userInfo:userInfo];
+        } else {
+            return nil;
+        }
     } else {
         return [super transformedValueForRelationship:relationshipDescription
                                              ofObject:object
