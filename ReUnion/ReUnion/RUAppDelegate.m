@@ -31,6 +31,23 @@
     
     self.resouceMapper = [[RMMapper alloc] initWithPersistentStoreCoordinator:self.dataManager.persistentStoreCoordinator];
     
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+        NSError *error = nil;
+        
+        NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"]];
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                             options:0
+                                                               error:&error];
+        
+        NSAssert(json, [error localizedDescription]);
+        
+        NSArray *speakers = [json objectForKey:@"speakers"];
+        
+        NSEntityDescription *speakerEntity = [[self.dataManager.managedObjectModel entitiesByName] objectForKey:@"Speaker"];
+        
+    });
+    
     return YES;
 }
 
