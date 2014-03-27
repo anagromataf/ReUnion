@@ -6,7 +6,10 @@
 //  Copyright (c) 2014 Tobias Kräntzer. All rights reserved.
 //
 
+#import <ModelTransformer/ModelTransformer.h>
 #import <ReUnionModel/ReUnionModel.h>
+
+#import "RUSpeakerTransformer.h"
 
 #import "RUAppDelegate.h"
 
@@ -42,10 +45,21 @@
         
         NSAssert(json, [error localizedDescription]);
         
-        NSArray *speakers = [json objectForKey:@"speakers"];
         
         NSEntityDescription *speakerEntity = [[self.dataManager.managedObjectModel entitiesByName] objectForKey:@"Speaker"];
         
+        MTArrayTransformer *speakers = [[MTArrayTransformer alloc] initWithArray:[json objectForKey:@"speakers"]
+                                           entity:speakerEntity
+                                         userInfo:nil
+                                            class:[RUSpeakerTransformer class]];
+        
+        [self.resouceMapper insertOrUpdateResource:speakers
+                            usingEntityDescription:speakerEntity
+                                        completion:^(id<RMResult> result, NSError *error) {
+                                            if (error) {
+                                                NSLog(@"Failed to import speakers: %@", [error localizedDescription]);
+                                            }
+                                        }];
     });
     
     return YES;

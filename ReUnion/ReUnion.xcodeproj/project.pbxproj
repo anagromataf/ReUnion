@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4507EFC69714FF2AE76D8B0 /* libPods-ReUnion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4A694886874294ACF73569 /* libPods-ReUnion.a */; };
+		F62FA74A18E41E6400102069 /* RUSpeakerTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F62FA74918E41E6400102069 /* RUSpeakerTransformer.m */; };
 		F6C620F518E3800E008D1104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C620F418E3800E008D1104 /* Foundation.framework */; };
 		F6C620F718E3800E008D1104 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C620F618E3800E008D1104 /* CoreGraphics.framework */; };
 		F6C620F918E3800E008D1104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C620F818E3800E008D1104 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		8C4A694886874294ACF73569 /* libPods-ReUnion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReUnion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968ABE9A0E1F4D0C8B70E6CD /* Pods-ReUnion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReUnion.xcconfig"; path = "../Pods/Pods-ReUnion.xcconfig"; sourceTree = "<group>"; };
+		F62FA74818E41E6400102069 /* RUSpeakerTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSpeakerTransformer.h; sourceTree = "<group>"; };
+		F62FA74918E41E6400102069 /* RUSpeakerTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSpeakerTransformer.m; sourceTree = "<group>"; };
 		F6C620F118E3800E008D1104 /* ReUnion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReUnion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C620F418E3800E008D1104 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6C620F618E3800E008D1104 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F62FA74718E41DE800102069 /* Model Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				F62FA74818E41E6400102069 /* RUSpeakerTransformer.h */,
+				F62FA74918E41E6400102069 /* RUSpeakerTransformer.m */,
+			);
+			name = "Model Transformer";
+			sourceTree = "<group>";
+		};
 		F6C620E818E3800E008D1104 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 				F6C6210318E3800E008D1104 /* RUAppDelegate.h */,
 				F6C6210418E3800E008D1104 /* RUAppDelegate.m */,
 				F6C6215B18E386C0008D1104 /* Data Manager */,
+				F62FA74718E41DE800102069 /* Model Transformer */,
 				F6C6210618E3800E008D1104 /* Images.xcassets */,
 				F6C620FB18E3800E008D1104 /* Supporting Files */,
 			);
@@ -300,6 +313,7 @@
 			files = (
 				F6C6210118E3800E008D1104 /* main.m in Sources */,
 				F6C6215A18E386B4008D1104 /* RUDataManager.m in Sources */,
+				F62FA74A18E41E6400102069 /* RUSpeakerTransformer.m in Sources */,
 				F6C6210518E3800E008D1104 /* RUAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
