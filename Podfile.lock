@@ -1,24 +1,22 @@
 PODS:
-  - ModelTransformer (1.0.0-alpha-4)
+  - ModelTransformer (1.0.1)
   - ResourceMapper (0.1)
   - ReUnionModel (0.0.1)
 
 DEPENDENCIES:
-  - ModelTransformer (from `../ModelTransformer/ModelTransformer.podspec`)
+  - ModelTransformer
   - ResourceMapper (from `../ResourceMapper/ResourceMapper.podspec`)
   - ReUnionModel (from `ReUnionModel.podspec`)
 
 EXTERNAL SOURCES:
-  ModelTransformer:
-    :path: ../ModelTransformer/ModelTransformer.podspec
   ResourceMapper:
     :path: ../ResourceMapper/ResourceMapper.podspec
   ReUnionModel:
     :path: ReUnionModel.podspec
 
 SPEC CHECKSUMS:
-  ModelTransformer: f2ae1f70d85e903a91735d3aca5d616c481e1bc1
+  ModelTransformer: 09b367da0b5c9d7507dfa6cac0b2f2456b011813
   ResourceMapper: fb6f225940aa73b19173dd2aa4cc5c93a3670bea
   ReUnionModel: 7f199283363af3662b2229461d17d13bc8dbd1b0
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.31.1
